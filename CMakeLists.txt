@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(lve main.cpp
         lve_window.h lve_window.cpp first_app.cpp first_app.h lve_pipeline.cpp lve_pipeline.h
-        lve_device.h lve_device.cpp)
+        lve_device.h lve_device.cpp lve_swap_chain.h lve_swap_chain.cpp)
 
 # GLFW
 set(GLFW_DIRS /opt/homebrew/Cellar/glfw/3.3.7/)
