@@ -206,4 +206,9 @@ namespace lve
 
         return configInfo;
     }
+
+    void LvePipeline::bind(VkCommandBuffer commandBuffer)
+    {
+        vkCmdBindPipeline(commandBuffer, VK_PIPELINE_BIND_POINT_GRAPHICS, graphicsPipeline);
+    }
 }
